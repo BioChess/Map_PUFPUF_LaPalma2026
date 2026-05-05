@@ -29,6 +29,7 @@ grupos <- unique(gps.df$birdID)  # Obtener los ID únicos
 
 for (bird in grupos) {
   # print(bird)
+  
   gps.ind <- gps.df2 %>% filter(birdID == bird)  # Filtrar datos por birdID
   
   # Saltar si gps.ind está vacío o todo son NA
